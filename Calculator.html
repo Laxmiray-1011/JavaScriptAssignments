@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .calculator {
+      margin-top: 50px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 calculator">
+      <div class="form-group">
+        <label for="number1">FirstNumber:</label>
+        <input type="number" class="form-control" id="number1">
+      </div>
+      <div class="form-group">
+        <label for="number2">SecoundNumber:</label>
+        <input type="number" class="form-control" id="number2">
+      </div>
+      <div class="form-group">
+        <label for="operator">Operator:</label>
+        <select class="form-control" id="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" onclick="calculate()">Submit</button>
+      <div class="form-group mt-3">
+        <label for="answer">Answers:</label>
+        <input type="text" class="form-control" id="answer" readonly>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="Calculator.js">
+</script>
+
+</body>
+</html>

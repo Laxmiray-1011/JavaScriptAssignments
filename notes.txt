@@ -1,0 +1,26 @@
+1. HTML Structure which is present in Calculator.html file: 
+   - The HTML structure is divided into a container with rows and columns, making use of Bootstrap's grid system.
+   - Inside the .container, there's a .calculator div, which contains all the calculator elements.
+
+2. Inputs and Button:
+   - There are three inputs: two for numbers (#number1 and #number2) and one dropdown (#operator) for selecting the operator.
+   - Below the inputs, there's a submit button (<button>).
+
+3. Answer Box:
+   - Below the submit button, there's an input box (#answer) which is marked as read-only (readonly attribute). This is where i show  the result of the calculation will be displayed.
+
+4. Bootstrap Styling:
+   - Bootstrap classes are used to style elements, providing a clean and responsive layout.
+
+5. JavaScript Function calculate() which is present in Calculator.js file:
+   - This function is called when the submit button is clicked.
+   - It retrieves the values of number1, number2, and operator from the respective input fields.
+   - It then checks if number1 and number2 are valid numbers using parseFloat() and isNaN().
+   - Based on the selected operator, it performs the corresponding calculation using a switch statement.
+   - The result of the calculation is then displayed in the #answer input field.
+
+6. Event Listener for Input Change:
+   - This part of the code adds an event listener to all input fields (#number1, #number2, and #operator) and the dropdown.
+   - Whenever there's a change in any of these input fields, it clears the content of the answer box (#answer).
+   -And if user press the submit button with out entering any numbers in input fields then a error message is print in result box. 
+ In this code i creates a simple calculator interface using Bootstrap for styling and JavaScript for handling calculations and input changes. It ensures that the answer box is cleared whenever there's a change in input, and it prevents invalid input by checking for valid numbers before performing calculations.
